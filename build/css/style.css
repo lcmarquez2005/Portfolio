@@ -123,3 +123,49 @@ h2 {
     transform: translateY(-5px);
     box-shadow: 0px 5px 5px 0px rgba(181,181,181,1);
 }
+
+/* projects */
+
+.project{
+    position: relative;
+}
+
+.projects img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.project:hover .overlay {
+    opacity: 1;
+}
+.project:hover img {
+    opacity: 0.2;
+}
+
+.overlay .icon-container {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 50px;
+    margin: 10px;
+}
