@@ -75,15 +75,50 @@ h2 {
 /* section */
 .about-me {
     padding: 3rem 0;
-    text-align: center;
-    color: white;
 }
 
 /* skills */
 
+/* carousel  */
 @media (max-width: 768px ) {
-    .card {
-        margin: 1rem auto;
+    .skills .carousel-item {
+        padding: 0 1rem;
+        height: 200px;
     }
 }
 
+
+/* Experience */
+.experience {
+    padding: 40px 40px 60px 40px;
+}
+.experience i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+.experience-title {
+    font-size: 25px;
+    margin: 10px 0;
+}
+.badges-container {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experience .columna {
+    border: 3px solid gray;
+    margin: 0 auto 2rem auto;
+    padding: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.experience .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px 0px rgba(181,181,181,1);
+}
