@@ -6,7 +6,6 @@ section {
     justify-content: center;
 }
 
-
 .section-title {
     font-size: 2rem;
     padding: 15px 0;
@@ -171,5 +170,37 @@ h2 {
 }
 
 
+.marquee-container {
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative;
+    width: 100%;
+    margin: 2rem auto;
+}
 
+.marquee {
+    flex: 0 0 auto;
+    min-width: 100%;
+    z-index: 1;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    animation: scroll 10s linear 0s infinite;   
+}
+.skill {
+    width: 100px;
+    height: 150px;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
 
